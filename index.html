@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Envision Furniture — Home</title>
+  <link rel="icon" type="image/png" href="images/ENVISION-LOGO.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <span class="preloader-logo">ENVISION FURNITURE</span>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="images/ENVISION-LOGO.png" alt="Envision Corp Logo" />
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="spotlight.html">Spotlight</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-icon" id="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="nav-icon cart-btn" aria-label="Cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- SEARCH OVERLAY -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search furniture, collections..." />
+      <button id="search-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="search-results" id="search-results"></div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-overlay" id="mobile-overlay">
+    <button class="overlay-close" id="overlay-close"><i class="fa-solid fa-xmark"></i></button>
+    <ul class="mobile-links">
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="collections.html" class="mobile-link">Collections</a></li>
+      <li><a href="spotlight.html" class="mobile-link">Spotlight</a></li>
+      <li><a href="reviews.html" class="mobile-link">Reviews</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <!-- VIDEO BACKGROUND -->
+      <video class="hero-video" autoplay muted loop playsinline>
+        <source src="video/mreb-1.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-video-overlay"></div>
+      <div class="hero-grain"></div>
+    </div>
+    <div class="hero-content">
+      
+      <h1 class="hero-title animate-from-left">
+        ENVISION <br>SPACES.<em><br/>EMPOWER PRODUCTIVITY.</em>
+      </h1>
+      <p class="hero-sub animate-from-right">
+        Creating elegant interiors<br />with premium furniture collections.
+      </p>
+      <div class="hero-cta animate-fade-up">
+        <a href="collections.html" class="btn-primary">Explore Collections</a>
+        <a href="spotlight.html" class="btn-ghost">Our Craft</a>
+      </div>
+    </div>
+    <div class="hero-stats animate-fade-up">
+      <div class="stat">
+        <span class="stat-num">3<em>+</em></span>
+        <span class="stat-label">Years in Real Estate</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">5K<em>+</em></span>
+        <span class="stat-label">Properties Sold</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">300<em>+</em></span>
+        <span class="stat-label">Trusted Clients</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <span class="stat-num">100<em>%</em></span>
+        <span class="stat-label">Client Satisfaction</span>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>Premium Furniture Collections</span><span class="ticker-dot">✦</span>
+      <span>Modern & Elegant Designs</span><span class="ticker-dot">✦</span>
+      <span>Quality Craftsmanship Guaranteed</span><span class="ticker-dot">✦</span>
+      <span>Custom Furniture Solutions</span><span class="ticker-dot">✦</span>
+      <span>Comfort Meets Style</span><span class="ticker-dot">✦</span>
+      <span>Luxury Living Essentials</span><span class="ticker-dot">✦</span>
+      <span>Durable & Timeless Pieces</span><span class="ticker-dot">✦</span>
+      <span>Envision Furniture Excellence</span><span class="ticker-dot">✦</span>
+      <span>Premium Furniture Collections</span><span class="ticker-dot">✦</span>
+      <span>Modern & Elegant Designs</span><span class="ticker-dot">✦</span>
+      <span>Quality Craftsmanship Guaranteed</span><span class="ticker-dot">✦</span>
+      <span>Custom Furniture Solutions</span><span class="ticker-dot">✦</span>
+      <span>Comfort Meets Style</span><span class="ticker-dot">✦</span>
+      <span>Luxury Living Essentials</span><span class="ticker-dot">✦</span>
+      <span>Durable & Timeless Pieces</span><span class="ticker-dot">✦</span>
+      <span>Envision Furniture Excellence</span><span class="ticker-dot">✦</span>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">ENVISION FURNITURE</span>
+        <p>Elegant furniture crafted with care,<br/>precision, and timeless craftsmanship.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Collections</h5>
+        <ul>
+          <li><a href="#">Office Furniture</a></li>
+          <li><a href="#">Pod</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h5>Stay Inspired</h5>
+        <p>Get design tips and new arrival alerts.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="your@email.com" />
+          <button><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Envision Furniture. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- CART TOAST -->
+  <div class="cart-toast" id="cart-toast">
+    <i class="fa-solid fa-check"></i>
+    <span id="toast-text">Item added to cart!</span>
+  </div>
+
+  <!-- BACK TO TOP -->
+  <button class="back-top" id="back-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

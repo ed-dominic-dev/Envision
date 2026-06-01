@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Envision Furniture — Reviews</title>
+  <link rel="icon" type="image/png" href="images/ENVISION-LOGO.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .reviews-intro{text-align:center;max-width:600px;margin:0 auto 5rem;padding-top:2rem}
+    .reviews-intro p{color:var(--mid);font-size:1rem;font-weight:300;line-height:1.9}
+    .testi-grid-extended{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;padding:0 4rem 7rem}
+    .rating-summary{background:var(--charcoal);padding:5rem 4rem;text-align:center}
+    .rating-big{font-family:var(--font-display);font-size:6rem;font-weight:300;color:var(--cream);line-height:1;margin-bottom:0.5rem}
+    .rating-stars-big{color:var(--gold);font-size:1.4rem;letter-spacing:0.15em;margin-bottom:1rem}
+    .rating-label{font-size:0.75rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,240,232,0.45)}
+    @media(max-width:1024px){.testi-grid-extended{grid-template-columns:1fr;padding:0 2rem 5rem}}
+  </style>
+</head>
+<body>
+
+  <!-- PRELOADER -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <span class="preloader-logo">ENVISION FURNITURE</span>
+      <div class="preloader-bar"><div class="preloader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="images/ENVISION-LOGO.png" alt="Envision Corp Logo" />
+    </a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="collections.html">Collections</a></li>
+      <li><a href="spotlight.html">Spotlight</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="nav-icon" id="search-btn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+      <button class="nav-icon cart-btn" aria-label="Cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-count" id="cart-count">0</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- SEARCH OVERLAY -->
+  <div class="search-overlay" id="search-overlay">
+    <div class="search-box">
+      <input type="text" id="search-input" placeholder="Search furniture, collections..." />
+      <button id="search-close"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="search-results" id="search-results"></div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-overlay" id="mobile-overlay">
+    <button class="overlay-close" id="overlay-close"><i class="fa-solid fa-xmark"></i></button>
+    <ul class="mobile-links">
+      <li><a href="index.html" class="mobile-link">Home</a></li>
+      <li><a href="collections.html" class="mobile-link">Collections</a></li>
+      <li><a href="spotlight.html" class="mobile-link">Spotlight</a></li>
+      <li><a href="reviews.html" class="mobile-link">Reviews</a></li>
+      <li><a href="contact.html" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg" style="background-image:url('images/envision-3.png');background-position:center 40%;"></div>
+  </div>
+
+  <!-- RATING SUMMARY -->
+  <div class="rating-summary">
+    <div class="rating-big scroll-reveal">4.9</div>
+    <div class="rating-stars-big scroll-reveal">
+      <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+    </div>
+    <p class="rating-label scroll-reveal">Based on 2,400+ verified reviews</p>
+  </div>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-header scroll-reveal" style="padding-top:2rem">
+      <p class="section-eyebrow">Client Testimonials</p>
+      <h2 class="section-title">Voices We Cherish</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card scroll-reveal" style="--delay:0.1s">
+        <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"The walnut dining table we ordered is breathtaking. It arrived on time, was assembled by the most professional team, and my family hasn't stopped complimenting it since."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">MR</div>
+          <div><strong>Maria Reyes</strong><span>Makati City</span></div>
+        </div>
+      </div>
+      <div class="testi-card scroll-reveal" style="--delay:0.2s">
+        <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"I ordered a custom home office setup — walnut desk with matching shelving. Envision nailed every detail. Worth every peso and more."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">JL</div>
+          <div><strong>Jose Lumabao</strong><span>BGC, Taguig</span></div>
+        </div>
+      </div>
+      <div class="testi-card scroll-reveal" style="--delay:0.3s">
+        <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"The craftsmanship is simply unmatched. Our lounge chair is the first thing guests ask about. It's art you can sit in."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">AC</div>
+          <div><strong>Angela Cruz</strong><span>Quezon City</span></div>
+        </div>
+      </div>
+      <div class="testi-card scroll-reveal" style="--delay:0.1s">
+        <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"Ordered the maple platform bed for our new home. Delivery was seamless, and the quality is extraordinary. It feels like sleeping on a cloud framed in art."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">RS</div>
+          <div><strong>Ramon Santos</strong><span>Alabang, Muntinlupa</span></div>
+        </div>
+      </div>
+      <div class="testi-card scroll-reveal" style="--delay:0.2s">
+        <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"We've purchased three pieces now and each one is better than the last. The attention to detail in the joinery alone is worth the investment."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">LP</div>
+          <div><strong>Lorena Perez</strong><span>Cebu City</span></div>
+        </div>
+      </div>
+      <div class="testi-card scroll-reveal" style="--delay:0.3s">
+        <div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+        <p>"The showroom experience alone sold me. Their consultants listened, understood our space, and recommended the perfect pieces. Zero regrets."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">BT</div>
+          <div><strong>Bea Tan</strong><span>Pasig City</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="cta-overlay"></div>
+    <div class="cta-content scroll-reveal">
+      <h2 class="cta-title">Visit Our<br /><em>Showroom</em></h2>
+      <p class="cta-sub">Visit our showroom and experience the Envision difference firsthand.<br> Our team of specialists is ready to guide you toward the perfect solution for your space.</p></br>
+      <a href="contact.html" class="btn-primary">Get In Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="footer-logo">ENVISION FURNITURE</span>
+        <p>Elegant furniture crafted with care,<br/>precision, and timeless craftsmanship.</p>
+      </div>
+      <div class="footer-links">
+        <h5>Collections</h5>
+        <ul>
+          <li><a href="#">Office Furniture</a></li>
+          <li><a href="#">Pod</a></li>
+        </ul>
+      </div>
+      <div class="footer-newsletter">
+        <h5>Stay Inspired</h5>
+        <p>Get design tips and new arrival alerts.</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="your@email.com" />
+          <button><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Envision Furniture. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="cart-toast" id="cart-toast">
+    <i class="fa-solid fa-check"></i>
+    <span id="toast-text">Item added to cart!</span>
+  </div>
+  <button class="back-top" id="back-top" aria-label="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
