@@ -261,7 +261,7 @@ input,textarea,select{font-family:inherit}
 
 /* ===== PAGE HERO (non-home pages) ===== */
 .page-hero{padding:12rem 4rem 6rem;background:var(--charcoal);text-align:center;position:relative;overflow:hidden;min-height:60vh}
-.page-hero::before{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,22,18,0.4),rgba(90,65,35,0.3));mix-blend-mode:multiply}
+.page-hero::before{display:none}
 .page-hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}
 .page-hero-content{position:relative;z-index:1}
 .page-hero .section-eyebrow{color:var(--gold-light)}
