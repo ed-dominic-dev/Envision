@@ -148,7 +148,7 @@ input,textarea,select{font-family:inherit}
 /* ===== PRODUCTS GRID ===== */
 .products{padding:7rem 4rem}
 .product-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
-.product-card{position:relative;background:var(--warm-white);border-radius:24px}
+.product-card{position:relative;background:var(--warm-white);border-radius:24px;align-self:start;}
 .product-img{position:relative;overflow:hidden;aspect-ratio:4/5;border-radius:24px}
 .product-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease}
 .product-card:hover .product-img img{transform:scale(1.05)}
@@ -161,6 +161,13 @@ input,textarea,select{font-family:inherit}
 .wishlist-btn{position:absolute;top:1rem;right:1rem;width:36px;height:36px;background:var(--warm-white);display:flex;align-items:center;justify-content:center;font-size:0.8rem;color:var(--mid);transition:var(--transition);opacity:0}
 .product-card:hover .wishlist-btn{opacity:1}
 .wishlist-btn:hover{background:var(--charcoal);color:var(--cream)}
+
+/* ===== PRODUCT DESCRIPTION ===== */
+.product-desc{font-size:0.88rem;color:var(--mid);font-weight:300;line-height:1.75;padding:0 0 1.2rem;font-family:var(--font-body);}
+
+/* ===== OFFICE FURNITURE 01 IMAGE FIX ===== */
+.product-card:first-child .product-img{aspect-ratio:4/3;height:auto;}
+.product-card:first-child .product-img img{height:100%;object-fit:cover;object-position:center center;}
 
 /* ===== CTA SECTION ===== */
 .cta-section{position:relative;padding:8rem 4rem;background:var(--dark);overflow:hidden;text-align:center}
@@ -266,16 +273,7 @@ input,textarea,select{font-family:inherit}
 .page-hero-content{position:relative;z-index:1}
 .page-hero .section-eyebrow{color:var(--gold-light)}
 .page-hero .section-title{color:var(--cream)}
-.page-hero .hero-video{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height: 100%;
-  object-fit:cover;
-  filter:brightness(0.8);
-  z-index:0;
-}
+.page-hero .hero-video{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;filter:brightness(0.8);z-index:0;}
 .page-hero .hero-video-overlay{background:transparent}
 .page-hero .hero-grain{display:none}
 

@@ -1,9 +1,17 @@
 // ===== PRELOADER =====
+function hidePreloader() {
+  document.getElementById('preloader')?.classList.add('hidden');
+}
 window.addEventListener('load', () => {
-  setTimeout(() => {
-    document.getElementById('preloader')?.classList.add('hidden');
-  }, 1800);
+  setTimeout(hidePreloader, 1800);
 });
+// Fallback: force hide after 3s no matter what (videos may fail to load)
+setTimeout(hidePreloader, 3000);
+
+// Extra fallback: hide as soon as DOM is ready if load event already fired
+if (document.readyState === 'complete') {
+  setTimeout(hidePreloader, 1800);
+}
 
 // ===== NAVBAR SCROLL =====
 const navbar = document.getElementById('navbar');
